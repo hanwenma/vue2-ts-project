@@ -1,0 +1,194 @@
+@import '~@/styles/base.less';
+
+.form-search {
+  margin-bottom: 26px;
+
+  .el-select__input {
+    margin-left: 8px;
+  }
+
+  .fill-in {
+    .el-select__input {
+      margin-left: 15px;
+    }
+  }
+
+  .el-input__suffix-inner {
+    color: @color-blue;
+  }
+
+  .el-input__inner {
+    padding-left: 8px !important;
+  }
+
+  .custom-form-box {
+    display: flex !important;
+    flex-wrap: wrap;
+
+    .form-item-custom {
+      width: 33.3%;
+      min-width: 345px;
+      display: flex;
+      align-items: center;
+      margin: 14px 0;
+
+      .el-form-item__label {
+        color: @color-black-A;
+      }
+
+      &>.el-form-item__label {
+        padding: 0 0 0 2px;
+        flex: 1;
+        line-height: 20px;
+        min-width: 105px;
+      }
+
+      &.form-item-multiple {
+        width: 100%;
+        align-items: center;
+
+        &.small-item-multiple {
+          width: 33.3%;
+        }
+
+        .el-checkbox__label {
+          word-break: break-word;
+        }
+
+        &>.el-form-item__label {
+          flex: none;
+          width: 128px;
+          min-width: 128px;
+        }
+
+        &>.el-form-item__content {
+          flex: 1;
+        }
+      }
+
+      &>.el-form-item__content {
+        width: 244px !important;
+        display: flex;
+        line-height: 20px;
+        align-items: center;
+
+        .delimiter {
+          margin-right: 8px;
+        }
+
+        &>.el-date-editor,
+        &>.select-box,
+        &>.el-cascader {
+          flex: 1;
+        }
+
+        &>.el-date-editor,
+        &>.select-box>.el-select {
+          width: 100% !important;
+        }
+
+        .el-checkbox {
+          margin-right: 10px;
+        }
+      }
+
+      &.form-item-custom-button {
+        text-align: right;
+        flex: 1;
+
+        &>.el-form-item__content {
+          justify-content: flex-end;
+          width: 100% !important;
+        }
+
+        .query-btn {
+          min-width: 110px;
+          background: #2f78ef;
+          color: #fff;
+
+          &.is-disabled {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .amount-range {
+        display: flex;
+        align-items: center;
+
+        &>span {
+          margin: 0 5px;
+        }
+      }
+    }
+
+    .form-reset-btn {
+      width: 100%;
+      text-align: right;
+      margin: 14px 0 14px;
+    }
+
+    .el-range-separator {
+      padding: 0 1px !important;
+      min-width: 5% !important;
+    }
+
+    .el-input__icon.el-range__close-icon {
+      width: 20px;
+    }
+  }
+
+  .async-select {
+    .el-input__suffix {
+      right: 4px !important;
+    }
+  }
+
+  .select-cascader {
+    .el-cascader-panel {
+      .el-cascader-node {
+        padding-left: 15px;
+      }
+
+      .el-scrollbar__wrap {
+        padding: 10px 0 20px;
+        overflow-x: hidden;
+      }
+    }
+
+    .el-cascader-panel .el-radio {
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      position: absolute;
+      top: 10px;
+    }
+
+    .el-cascader-menu__list {
+      li {
+        overflow: hidden;
+
+        .el-cascader-node__label {
+          margin-left: 10px;
+          overflow-x: hidden;
+        }
+      }
+    }
+
+    /* 这个样式针对IE有用，不考虑IE的可以不用管*/
+    .el-cascader-panel .el-cascader-node__postfix {
+      top: 10px;
+    }
+  }
+
+  .form-item-custom {
+    margin: 15px 0;
+  }
+
+  .el-date-editor {
+    .el-icon-date {
+      font-size: 18px;
+      color: @color-blue;
+    }
+  }
+}

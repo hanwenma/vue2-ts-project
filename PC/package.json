@@ -1,0 +1,67 @@
+{
+  "name": "vue2-ts-class-pc",
+  "description": "A PC web application with Vue2.x.js and TypeScript.",
+  "version": "0.0.1",
+  "files": [
+    "lib",
+    "types"
+  ],
+  "private": false,
+  "keywords": [
+    "vue",
+    "vuejs",
+    "typescript"
+  ],
+  "scripts": {
+    "dev": "cross-env API_ENV=dev vue-cli-service serve --mode dev",
+    "build:test": "cross-env API_ENV=test vue-cli-service build",
+    "build:prod": "cross-env API_ENV=prod vue-cli-service build"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.12.13",
+    "@tinymce/tinymce-vue": "^3.2.2",
+    "@types/js-cookie": "^2.2.4",
+    "@types/tinymce": "^4.5.24",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "axios": "^0.21.1",
+    "babel-preset-es2015": "^6.24.1",
+    "core-js": "^3.4.3",
+    "cross-env": "^7.0.2",
+    "default-passive-events": "^1.0.10",
+    "echarts": "^5.1.1",
+    "element-ui": "^2.15.1",
+    "js-cookie": "^2.2.1",
+    "moment": "^2.26.0",
+    "svg-sprite-loader": "^5.2.1",
+    "tinymce": "^5.3.1",
+    "tslib": "^2.1.0",
+    "v-viewer": "^1.5.1",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-i18n": "^8.24.4",
+    "vue-property-decorator": "^8.3.0",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.2",
+    "xlsx": "^0.17.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.5",
+    "@vue/cli-plugin-router": "^4.0.5",
+    "@vue/cli-plugin-typescript": "^4.0.5",
+    "@vue/cli-plugin-vuex": "^4.0.5",
+    "@vue/cli-service": "^4.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "compression-webpack-plugin": "^7.1.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "typescript": "~3.5.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-bundle-analyzer": "^4.3.0"
+  }
+}

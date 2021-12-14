@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>PC</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>
+        We're sorry but esm-pc-fe doesn't work properly without JavaScript enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+
+    <div id="app"></div>
+
+    <script src="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js" crossorigin="anonymous"></script>
+    <script>
+      NProgress.start();
+      // 给页面设置请求加载进度条效果
+      window.onload = function() {
+        NProgress.done();
+      };
+    </script>
+  </body>
+</html>

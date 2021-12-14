@@ -1,0 +1,108 @@
+@import '~@/styles/base.less';
+
+@border: 1px solid #eeeeee !important;
+
+.cost-row-padding {
+  padding: 10px 0px !important;
+}
+
+.cost-herder-padding {
+  padding: 10px 0px !important;
+}
+
+.table-header {
+  &>th {
+    background: @color-gray;
+    color: @color-black-A;
+    text-align: center;
+  }
+}
+
+.el-table__body-wrapper {
+  .el-table__body {
+    td {
+      text-align: center;
+    }
+  }
+}
+
+.el-pagination {
+
+  .btn-prev,
+  .btn-next {
+    background-color: @color-white;
+    border: @border;
+  }
+
+  .el-pagination__jump {
+    position: relative;
+    margin: 0 !important;
+  }
+
+  .el-pager {
+    .el-icon {
+      &.more {
+        background-color: @color-white;
+      }
+    }
+
+    .number {
+      background-color: @color-white;
+      border: @border;
+
+      &:hover {
+        color: @color-blue;
+      }
+
+      &.active {
+        background-color: @color-blue;
+        border-color: @color-blue  !important;
+
+        &:hover {
+          color: @color-white;
+        }
+      }
+    }
+  }
+}
+
+.el-select-dropdown__wrap {
+  .el-select-dropdown__item {
+    &.selected {
+      color: @color-blue;
+    }
+  }
+}
+
+.el-loading-mask {
+  .el-icon-loading {
+    color: @color-white;
+  }
+
+  .el-loading-text {
+    color: @color-white;
+  }
+}
+
+.star-class>.cell::before {
+  content: '*' !important;
+  color: red !important;
+}
+
+.el-table__fixed {
+  height: 100% !important;
+}
+
+.el-table__fixed-right {
+  height: 100% !important;
+}
+
+.column-checkbox-group-box {
+  .column-checkbox-group {
+    &>.el-checkbox {
+      &>.el-checkbox__label {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '~@/styles/base.less';
+.table-box {
+  .custom-columns-btn {
+    text-align: right;
+    padding: 20px 0;
+    border-top: 1px dashed @color-gray;
+  }
+  .t-table {
+    position: relative;
+    .table-list {
+      width: 100%;
+      border-top: none;
+      border-bottom: none;
+      .table-header {
+        & > th {
+          background: #f1f1f1;
+        }
+      }
+    }
+    .t-pagination {
+      display: flex;
+      margin-top: 10px;
+      .el-pagination {
+        width: 58%;
+        text-align: right;
+      }
+      .page-info {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        word-break: break-word;
+        flex: 1;
+        color: @color-gray-B;
+      }
+    }
+  }
+}

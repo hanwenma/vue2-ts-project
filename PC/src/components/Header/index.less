@@ -1,0 +1,84 @@
+@import '~@/styles/base.less';
+
+.@{css-prefix} {
+  &-headbg {
+    width: 100%;
+    background-color: @color-blue;
+    box-shadow: 3px 5px 5px 0px rgba(3, 16, 78, 0.1);
+    margin: 0 0 20px 0;
+
+    &-head {
+      width: @width;
+      min-width: @min-width;
+      background-color: @color-blue;
+      height: 55px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: @font-size-small;
+      color: @color-white;
+      &-logo {
+        cursor: pointer;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: @color-white;
+        font-size: @font-size-logo;
+        .logo-bg {
+          height: 100%;
+          display: block;
+          width: 226px;
+          margin: 0 10px 0 0;
+        }
+        .logo-bg2 {
+          height: 100%;
+          display: block;
+          width: 206px;
+          margin: 0 10px 0 0;
+        }
+      }
+      &-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        .avatar {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+        }
+        a:hover {
+          color: @color-orange;
+        }
+        .split {
+          margin: 0 10px;
+        }
+        .spherical {
+          width: 36px;
+          height: 36px;
+          margin-right: 8px;
+        }
+        .avatar {
+          margin: 0 10px;
+        }
+      }
+    }
+
+    &-menubg {
+      width: 100%;
+      height: @menu-height;
+      background-color: @color-blue-A;
+      &-menu {
+        width: @width;
+        min-width: @min-width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

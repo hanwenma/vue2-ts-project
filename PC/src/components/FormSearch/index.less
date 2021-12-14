@@ -1,0 +1,84 @@
+@import '~@/styles/base.less';
+
+.form-search {
+  color: @color-black-A;
+
+  .select-box {
+    position: relative;
+
+    .icon-search {
+      z-index: 10;
+      background-color: @color-white;
+      height: 90%;
+      display: flex;
+      width: 24px;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: @color-blue;
+      font-weight: 400;
+
+      &.disabled {
+        background-color: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+
+  .double-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .select-item {
+      width: 49%;
+    }
+  }
+
+  .collapse {
+    margin: 10px auto;
+    color: @color-blue;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+
+    .icon-box {
+      background: @color-blue;
+      margin: 0 5px;
+      border-radius: 50%;
+      text-align: center;
+      color: @color-white;
+      font-size: 14px;
+      line-height: 16px;
+      width: 16px;
+      height: 16px;
+    }
+
+    .dashed {
+      flex: 1;
+      border-top: 1px dashed @color-blue;
+    }
+  }
+
+  .async-select {
+    /deep/.el-input__inner {
+      padding: 0 30px 0 8px !important;
+    }
+  }
+
+  /deep/.el-date-editor {
+    position: relative;
+
+    .el-range__close-icon {
+      position: absolute;
+      line-height: 32px;
+      right: 4px;
+      float: none;
+    }
+  }
+}
